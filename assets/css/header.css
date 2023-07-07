@@ -1,0 +1,156 @@
+header{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: #000000;
+    color: #fff;
+}
+
+.logo{
+    margin: auto 0;
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #aaaaaa;
+}
+.menu-list{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.menu-list li{
+    padding: 10px;
+    margin-right: 40px;
+
+}
+.menu-list a{
+    color: #d1d1d1;
+    font-weight: 500;
+    font-size: 17px;
+}
+.menu-list a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1.5px;
+    background-color: #f4f4f4;
+    transition: width 0.5s ease-in-out;
+}
+
+.menu-list a:hover::after {
+    width: 100%;
+}
+.menu-list a:hover{
+    color: #ffffff;
+}
+
+#btn-mobile{
+    display: none;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 30px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.search-bar #inputSearch {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.search-bar #btnSearch{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-left: -20px;
+    cursor: pointer;
+}
+.search-bar img{
+    max-width: 30px;
+}
+
+
+@media (max-width: 810px) {
+    header{
+      padding: 20px 20px;
+
+    }
+    .menu-list {
+      display: block;
+      position: absolute;
+      right: 0px;
+      background: #000000;
+      transition: 0.6s;
+      z-index: 1000;
+      height: 0px;
+      visibility: hidden;
+      overflow-y: hidden;
+      margin: 0px;
+      margin-top: 18px;
+    }
+    #nav.active .menu-list {
+      height: 189px;
+      visibility: visible;
+      overflow-y: auto;
+    }
+    .menu-list a {
+      padding: 16px 10px;
+      margin-right: 40px;
+      text-align: center;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    }
+    .menu-list a::after{
+        display: none;
+    }
+
+    .menu-list a:hover{
+        background-color: #1863ef;
+    }
+    #btn-mobile {
+      display: flex;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      background: none;
+      cursor: pointer;
+      gap: 0.5rem;
+    }
+    #hamburger {
+      border-top: 2px solid;
+      width: 20px;
+      color: #fff;
+
+    }
+    #hamburger::after,
+    #hamburger::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: currentColor;
+      margin-top: 5px;
+      transition: 0.3s;
+      position: relative;
+    }
+    #nav.active #hamburger {
+      border-top-color: transparent;
+    }
+    #nav.active #hamburger::before {
+      transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+  }
+  
