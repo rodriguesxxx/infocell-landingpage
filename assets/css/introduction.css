@@ -8,6 +8,7 @@
     justify-content: center;
     margin: auto 0;
     padding: 60px;
+
 }
 .intro-title{
     font-size: 60px;
@@ -18,7 +19,7 @@
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 600;
-    background: linear-gradient(0deg, #3d3df0, #0404cd);
+    
     padding: 5px;
     border-radius: 5px;
 }
