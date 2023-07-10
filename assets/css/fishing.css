@@ -68,3 +68,9 @@
         margin-bottom: 20px;
     }
 }
+@media(max-width: 400px){
+    .fish-content .btn-orcamento{
+        font-size: 12px;
+        padding: 20px 30px;
+    }
+}
