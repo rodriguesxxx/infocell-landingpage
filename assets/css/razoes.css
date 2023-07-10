@@ -1,0 +1,17 @@
+.bg-black{
+    margin-top: 0px;
+
+}
+.razoes{
+    margin-top: 0px;
+    padding: 80px 120px;
+}
+.razoes-list{
+    display: flex;
+    gap: 50px;
+}
+.razoes-list li{
+    text-align: center;
+    padding: 10px 40px;
+    background-color: #000000;
+}
