@@ -116,6 +116,12 @@ header{
     .menu-list a:hover{
         background-color: #1863ef;
     }
+
+    .search-bar{
+      width: 220px;
+      height: 30px;
+    }
+
     #btn-mobile {
       display: flex;
       padding: 0.5rem 1rem;
