@@ -103,6 +103,9 @@ header{
       visibility: visible;
       overflow-y: auto;
     }
+    .menu-list li{
+      border-bottom: 2px solid #1863ef;
+    }
     .menu-list a {
       padding: 16px 10px;
       margin-right: 40px;
@@ -114,10 +117,11 @@ header{
     }
 
     .menu-list a:hover{
-        background-color: #1863ef;
+        background-color: #031a43;
     }
 
     .search-bar{
+      margin-top: 10px;
       width: 220px;
       height: 30px;
     }
