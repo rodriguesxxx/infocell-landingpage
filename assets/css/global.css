@@ -25,6 +25,8 @@ img{
 .bg-blue{
   background: linear-gradient(-45deg, #5050f0, #1818de);
   padding: 4px 6px;
+  color: #fff;
+
 }
 .bg-black{
   background-color: #000000;
