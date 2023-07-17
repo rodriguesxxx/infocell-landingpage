@@ -67,9 +67,11 @@
     .razoes-title{
         font-size: 27px;
         margin-bottom: 50px;
+        line-height: 40px;
     }
+
     .razoes-list li{
-        padding: 100px 160px;
+        padding: 65px 120px;
         border-radius: 15px;
     }
     .razoes-list img{

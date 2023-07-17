@@ -1,0 +1,104 @@
+.depoimentos{
+    margin: 0 auto;
+    max-width: 1200px;
+    
+}
+
+.depoimentos-title{
+    margin-top: 40px;
+    margin-bottom: 70px;
+    color: #1863efe5;
+    text-align: center;
+    font-size: 35px;
+}
+
+.depoimentos-list{
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: auto;
+}
+
+.depoimento-content{
+    display: grid;
+    grid-template-columns: 50px 1fr ;
+}
+
+.depoimento-img{
+    width: 50px;
+}
+
+.depoimento-content .column{
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+.depoimento-name{
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.depoimento-stars{
+    margin-top: 5px;
+    
+}
+
+.depoimento-stars .star-img{
+    width: 14px;
+}
+
+
+/* Estilo da aparência da barra de rolagem */
+.depoimentos-list::-webkit-scrollbar {
+    width: 10px;
+
+  }
+  
+  .depoimentos-list::-webkit-scrollbar-track {
+    background-color: #525252;
+  }
+  
+  .depoimentos-list::-webkit-scrollbar-thumb {
+    background-color: #292d32;
+  }
+  
+  .depoimentos-list::-webkit-scrollbar-thumb:hover {
+    background-color: #17181a;
+  }
+
+@media(max-width: 510px){
+    .depoimentos-list{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .depoimentos-title{
+        margin-top: 5px;
+    }
+    .depoimento-text{
+        margin-right: 23px;
+    }
+    .depoimentos-list{
+        overflow-x: hidden;
+    }
+}
+@media(max-width: 450px){
+    .depoimentos{
+        margin-top: 125px;
+    }
+    .depoimentos-title{
+        font-size: 30px;
+        margin-bottom: 100px;
+    }
+    .depoimento-text{
+        margin-right: 18px;
+    }
+}
+@media(max-width: 360px){
+    
+
+    .depoimento-text{
+        margin-right: 16px;
+    }
+}

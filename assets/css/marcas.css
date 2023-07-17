@@ -51,8 +51,7 @@
 
 @media(max-width: 540px){
     .marcas{
-        
-        padding: 30px;
+        padding: 30px 30px 30px 10px;
     }
     .marcas-list{
         gap: 30px;
@@ -61,5 +60,14 @@
         font-size: 30px;
         flex-direction: column;
         line-height: 50px;
+    }
+}
+@media(max-width: 430px){
+    .marcas{
+        padding: 0px;
+        padding-right: 40px;
+    }
+    .marcas-list{
+        gap: 20px;
     }
 }
